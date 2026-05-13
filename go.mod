@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest sports news, highlights, and live coverage from Fox Sports and NBC Sports">
+    <meta name="keywords" content="Fox Sports, NBC Sports, live sports, sports news, NFL, NBA, MLB, NHL, Premier League">
+    <title>Fox Sports & NBC Sports</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --fox-red: #e61e24;
+            --fox-blue: #003366;
+            --nbc-green: #67bb00;
+            --nbc-blue: #0a4d8c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 30px;
+        }
+        
+        .fox-bg {
+            background-color: var(--fox-blue);
+            color: white;
+        }
+        
+        .nbc-bg {
+            background-color: var(--nbc-blue);
+            color: white;
+        }
+        
+        .card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .fox-card .card-header {
+            background-color: var(--fox-red);
+            color: white;
+        }
+        
+        .nbc-card .card-header {
+            background-color: var(--nbc-green);
+            color: white;
+        }
+        
+        .schedule-item {
+            border-left: 4px solid var(--fox-red);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .nbc-schedule {
+            border-left-color: var(--nbc-green);
+        }
+        
+        footer {
+            background-color: #222;
+            color: #ddd;
+            padding: 40px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c8/Fox_Sports_Australia_2015_logo.svg" alt="Fox Sports Logo" style="height:70px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedules">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#highlights">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Your Ultimate Sports Destination</h1>
+            <p class="lead mb-5">Comprehensive coverage from Fox Sports and NBC Sports all in one place</p>
+            <a href="#news" class="btn btn-danger btn-lg me-2">Latest News</a>
+            <a href="#schedules" class="btn btn-success btn-lg">View Schedules</a>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Sports News</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card fox-card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0">Fox Sports Headlines</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4>NFL Week 1 Preview: Key Matchups to Watch</h4>
+                                <p>Fox Sports analysts break down the most anticipated games of the opening weekend, with expert predictions and player insights.</p>
+                                <span class="badge bg-primary">NFL</span>
+                                <span class="badge bg-secondary">Football</span>
+                            </div>
+                            <div class="mb-4">
+                                <h4>MLB Playoff Race Heats Up</h4>
+                                <p>With just 30 games left in the season, the battle for postseason spots intensifies. See which teams are rising and which are fading.</p>
+                                <span class="badge bg-primary">MLB</span>
+                                <span class="badge bg-secondary">Baseball</span>
+                            </div>
+                            <div>
+                                <h4>College Football Top 25 Rankings</h4>
+                                <p>Fox Sports releases its preseason rankings with surprising placements that are already sparking debates among fans.</p>
+                                <span class="badge bg-primary">NCAA</span>
+                                <span class="badge bg-secondary">Football</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card nbc-card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0">NBC Sports Headlines</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4>Premier League Returns With Thrilling Matches</h4>
+                                <p>NBC Sports provides comprehensive coverage of the opening weekend, including analysis of all 10 matches.</p>
+                                <span class="badge bg-primary">Soccer</span>
+                                <span class="badge bg-secondary">Premier League</span>
+                            </div>
+                            <div class="mb-4">
+                                <h4>Olympic Trials Begin Next Month</h4>
+                                <p>Get ready for the road to the 2025 Olympics with exclusive coverage of the trials across multiple sports.</p>
+                                <span class="badge bg-primary">Olympics</span>
+                                <span class="badge bg-secondary">Track & Field</span>
+                            </div>
+                            <div>
+                                <h4>NHL Free Agency Frenzy</h4>
+                                <p>Big names are on the move as teams reshape their rosters for the upcoming season. NBC Sports has all the latest signings.</p>
+                                <span class="badge bg-primary">NHL</span>
+                                <span class="badge bg-secondary">Hockey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedules Section -->
+    <section id="schedules" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Upcoming Broadcast Schedules</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="p-4 fox-bg rounded mb-4">
+                        <h3 class="text-center mb-4">Fox Sports Schedule</h3>
+                        <div class="schedule-item">
+                            <h5>NFL: Cowboys vs. Giants</h5>
+                            <p>Sunday, September 10 | 4:25 PM ET</p>
+                            <p>FOX | NFL on FOX</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h5>MLB: Yankees vs. Red Sox</h5>
+                            <p>Friday, September 15 | 7:00 PM ET</p>
+                            <p>FOX | MLB on FOX</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h5>College Football: Alabama vs. Texas</h5>
+                            <p>Saturday, September 9 | 12:00 PM ET</p>
+                            <p>FOX | Big Noon Saturday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 nbc-bg rounded">
+                        <h3 class="text-center mb-4">NBC Sports Schedule</h3>
+                        <div class="schedule-item nbc-schedule">
+                            <h5>Premier League: Arsenal vs. Man United</h5>
+                            <p>Sunday, September 10 | 11:30 AM ET</p>
+                            <p>NBC | Premier League Live</p>
+                        </div>
+                        <div class="schedule-item nbc-schedule">
+                            <h5>NHL: Stanley Cup Finals Game 7</h5>
+                            <p>Wednesday, September 13 | 8:00 PM ET</p>
+                            <p>NBC | NHL on NBC</p>
+                        </div>
+                        <div class="schedule-item nbc-schedule">
+                            <h5>Olympic Trials: Track & Field</h5>
+                            <p>Saturday, September 16 | 3:00 PM ET</p>
+                            <p>NBC | Olympic Channel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Highlights</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="NFL Highlight">
+                        <div class="card-body">
+                            <h5 class="card-title">Game-Winning Touchdown</h5>
+                            <p class="card-text">Watch the incredible last-minute play that sealed the victory in Sunday's matchup.</p>
+                            <a href="#" class="btn btn-outline-danger">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.www.nfl.com/image/upload/f_auto,q_auto,dpr_2.0/league/kfixpys1cbsez4ym5qea" class="card-img-top" alt="Soccer Goal">
+                        <div class="card-body">
+                            <h5 class="card-title">Football's back! Watch the preseason with NFL Game Pass!</h5>
+                            <p class="card-text">Experience the NFL for free. Register to watch the NFL Preseason, NFL Network, game highlights and more for free. No subscription required.</p>
+                            <a href="#" class="btn btn-outline-success">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="NBA Dunk">
+                        <div class="card-body">
+                            <h5 class="card-title">Playoff Dunk of the Year</h5>
+                            <p class="card-text">This posterizing dunk brought the crowd to its feet during the conference finals.</p>
+                            <a href="#" class="btn btn-outline-primary">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>About Fox Sports & NBC Sports</h2>
+                    <p class="lead">Bringing you the best sports coverage from two of the world's leading sports networks.</p>
+                    <p>Fox Sports and NBC Sports have partnered to provide fans with comprehensive coverage of all major sports leagues and events. From the NFL and Premier League to the Olympics and everything in between, we've got you covered with live games, expert analysis, and exclusive content.</p>
+                    <p>Our team of award-winning journalists and analysts work around the clock to deliver breaking news, in-depth features, and must-see highlights to sports fans everywhere.</p>
+                    <div class="mt-4">
+                        <a href="https://www.foxsports.com" class="btn btn-danger me-2">Fox Sports Website</a>
+                        <a href="https://www.nbcsports.com" class="btn btn-success">NBC Sports Website</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Sports Analysts" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#news" class="text-white">News</a></li>
+                        <li><a href="#schedules" class="text-white">Schedules</a></li>
+                        <li><a href="#highlights" class="text-white">Highlights</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Sports Coverage</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">NFL</a></li>
+                        <li><a href="#" class="text-white">MLB</a></li>
+                        <li><a href="#" class="text-white">NBA</a></li>
+                        <li><a href="#" class="text-white">NHL</a></li>
+                        <li><a href="#" class="text-white">Premier League</a></li>
+                        <li><a href="#" class="text-white">Olympics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter for the latest updates:</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-danger" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Fox Sports & NBC Sports. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
